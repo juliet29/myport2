@@ -12,12 +12,12 @@
   height: 100vh;
   background: #161b6b;
   position: absolute;
-  z-index: -10;
+  z-index: -10; // place in background
 }
 
 .menu {
-  // give 0 width so that name items can line up nicely
-  width: 0;
+  width: 0; // give 0 width so that name items can line up nicely
+  z-index: 10; // place as highest element
 }
 
 .name {
@@ -33,7 +33,7 @@
   border: blue 1px dotted;
 }
 
-// make menu options get smaller for jagged effect --> can do better w js
+// make menu options get smaller for jagged effect --> can do better w js!!
 .menu-child:nth-child(1) {
   width: 80vw;
   background-color: aqua;
@@ -51,12 +51,19 @@
   background-color: yellow;
 }
 
-// make titles of menu options buttons that fill the menu option divs
 .menu-child-btn {
+  // make titles of menu options buttons that fill the menu option divs
   @include button-reset;
   padding: 10px;
   // background-color: skyblue;
   @include fill-parent;
+}
+
+.menu-child-btn:hover {
+  color: #ffffff !important;
+  background-color: greenyellow;
+  border-color: darkgreen !important;
+  transition: all 0.4s ease 0s;
 }
 
 // // make name get larger for jagged effect --> can do better w js
