@@ -1,0 +1,32 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+// make menu options get smaller for jagged effect --> can do better w js
+.menu-child:nth-child(1) {
+  width: 80vw;
+  background-color: aqua;
+}
+.menu-child:nth-child(2) {
+  width: 60vw;
+  background-color: fuchsia;
+}
+
+.menu-child:nth-child(3) {
+  width: 40vw;
+  background-color: orange;
+}
+
+.menu-child:nth-child(4) {
+  width: 20vw;
+  background-color: yellow;
+}
+
+.menu-child {
+  // background-color: white;
+  width: 80vw;
+  height: 20vh;
+  border: blue 1px dotted;
+}

@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+/* stuff for the first page, can make global later */
+
+/* likely global */
+
+// base fonts
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,400i,700&display=swap");
+
+// fancy font
+@import url("https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap");
+
+// other scss modules
+@import "src/_variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  margin: 0 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  //   display: flex;
+  //   justify-content: center;
+  background-color: rgba(255, 0, 0, 0.116);
+}
+
+// specifically for the home page
