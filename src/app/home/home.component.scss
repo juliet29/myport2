@@ -4,6 +4,24 @@
   justify-content: space-between;
 }
 
+.menu {
+  // give 0 width so that name items can line up nicely
+  width: 0;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menu-child,
+.name-child {
+  // background-color: white;
+  height: 20vh;
+  border: blue 1px dotted;
+}
+
 // make menu options get smaller for jagged effect --> can do better w js
 .menu-child:nth-child(1) {
   width: 80vw;
@@ -13,20 +31,29 @@
   width: 60vw;
   background-color: fuchsia;
 }
-
 .menu-child:nth-child(3) {
   width: 40vw;
   background-color: orange;
 }
-
 .menu-child:nth-child(4) {
   width: 20vw;
   background-color: yellow;
 }
 
-.menu-child {
-  // background-color: white;
+// // make name get larger for jagged effect --> can do better w js
+.name-child:nth-child(1) {
+  width: 20vw;
+  background-color: white;
+}
+.name-child:nth-child(2) {
+  width: 40vw;
+  background-color: white;
+}
+.name-child:nth-child(3) {
+  width: 60vw;
+  background-color: white;
+}
+.name-child:nth-child(4) {
   width: 80vw;
-  height: 20vh;
-  border: blue 1px dotted;
+  background-color: white;
 }
