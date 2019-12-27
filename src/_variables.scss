@@ -1,1 +1,17 @@
 /* all of the variables, names, colors, etc */
+
+@mixin button-reset {
+  // reset buttons
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin fill-parent {
+  // make button fill parent container
+  width: 100%;
+  height: 100%;
+}

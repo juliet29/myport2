@@ -1,3 +1,6 @@
+// other scss modules ß
+@import "src/_variables.scss";
+
 .home {
   display: flex;
   flex-direction: row;
@@ -46,6 +49,14 @@
 .menu-child:nth-child(4) {
   width: 20vw;
   background-color: yellow;
+}
+
+// make titles of menu options buttons that fill the menu option divs
+.menu-child-btn {
+  @include button-reset;
+  padding: 10px;
+  // background-color: skyblue;
+  @include fill-parent;
 }
 
 // // make name get larger for jagged effect --> can do better w js
