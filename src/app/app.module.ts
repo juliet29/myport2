@@ -5,9 +5,12 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
 import { ParticlesDirective } from "./particles.directive";
+import { TopiclistComponent } from './topiclist/topiclist.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProjectDisplayComponent } from './project-display/project-display.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ParticlesDirective],
+  declarations: [AppComponent, HomeComponent, ParticlesDirective, TopiclistComponent, PageNotFoundComponent, ProjectDisplayComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
